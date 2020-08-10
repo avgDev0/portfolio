@@ -1,0 +1,26 @@
+#actionBarContainer {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  #actionBarContainer {
+    grid-template-columns: repeat(2, 25%);
+  }
+}
+
+/* Medium devices up*/
+@media only screen and (min-width: 768px) {
+  #actionBarContainer {
+    grid-template-rows: repeat(2, 60px);
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+.actionBarButton {
+  border: black;
+  border-style: solid;
+}

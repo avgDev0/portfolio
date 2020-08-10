@@ -3,7 +3,7 @@ import Container from "../components/Container";
 
 function App() {
   return (
-    <Container actionBar={<div>testingBar</div>}>
+    <Container currentView="TetingPath">
       <div>testContent</div>
     </Container>
   );

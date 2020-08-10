@@ -1,16 +1,19 @@
 import React, { FunctionComponent } from "react";
 import "../styles/Container.css";
+import ActionBar from "./ActionBar";
 
 type ContainerProps = {
-  actionBar?: any;
+  currentView?: string;
 };
 
 export const Container: FunctionComponent<ContainerProps> = ({
-  actionBar,
+  currentView,
   children,
 }) => (
   <div id="container">
-    <div id="actionBar">{actionBar}</div>
+    <div id="actionBar">
+      <ActionBar currentView={currentView} />
+    </div>
     <div id="content">{children}</div>
   </div>
 );
